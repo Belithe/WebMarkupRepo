@@ -1,0 +1,60 @@
+body {
+	font-family:"Arial", "Lucida Console", "Courier New", "Helvetica", monospace;
+	background-color:#F5F5F5;
+}
+
+#title {
+	text-align:center;
+}
+
+@media screen and (max-width: 480px) {
+}
+
+
+
+section {
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-left:8%;
+	padding-right:8%;
+	
+
+}
+a {
+	font-size: 15pt;
+	color: #707070;
+}
+a:visited {
+	color: #AAAAAA;
+}
+p {
+	
+	font-size: 15pt;
+	color: #000000;
+}
+h1{
+	font-size: 80pt;
+	color:#2699FB;
+}
+h2 {
+	font-size: 30pt;
+	color: #2699FB;
+}
+fieldset {
+	font-size:15pt;
+	background-color: #FFFFFF;
+	
+}
+legend {
+	font-size:18pt;
+}
+form {
+	text-align: left;
+	white-space: pre-line;
+}
+input {
+	text-align: relative;
+}
