@@ -1,6 +1,9 @@
 body {
 	font-family:"Arial", "Lucida Console", "Courier New", "Helvetica", monospace;
 	background-color:#F5F5F5;
+	display: flex;
+	flex-direction:column;
+	flex-wrap: no-wrap;
 }
 
 #title {
@@ -10,19 +13,17 @@ body {
 @media screen and (max-width: 480px) {
 }
 
-
-
 section {
-	
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	flex-wrap: wrap;
+	width:84%;
 	padding-left:8%;
 	padding-right:8%;
-	
-
 }
+
+#sportsList {
+	padding-left:0%;
+	padding-right:10%;
+}
+
 a {
 	font-size: 15pt;
 	color: #707070;
@@ -30,6 +31,28 @@ a {
 a:visited {
 	color: #AAAAAA;
 }
+
+#sportsList p {
+		text-align: justify;
+		padding-left: 2%;
+		margin-right: 2%;
+}
+
+#sportsList li {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		display:flex;
+		flex-direction: row;
+		justify-content: space-between;
+}
+
+.SportImages {
+		justify-content: flex-end;
+		width: 235px;
+		height: auto;
+}
+
 p {
 	
 	font-size: 15pt;
@@ -40,6 +63,7 @@ h1{
 	color:#2699FB;
 }
 h2 {
+
 	font-size: 30pt;
 	color: #2699FB;
 }
