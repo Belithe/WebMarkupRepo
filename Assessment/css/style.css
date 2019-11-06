@@ -32,11 +32,11 @@ a:visited {
 	color: #AAAAAA;
 }
 
-#sportsList p {
-		text-align: justify;
-		padding-left: 2%;
+#sportsList li p {
+		width:60%;
 		margin-right: 2%;
 }
+
 
 #sportsList li {
 		padding: 0;
@@ -47,10 +47,34 @@ a:visited {
 		justify-content: space-between;
 }
 
+#sportsList li h3 {
+	width:18%;
+}
+
+#mainArticle {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#mainTextContainer {
+	width: 60%;
+}
+
+
+
 .SportImages {
 		justify-content: flex-end;
 		width: 235px;
 		height: auto;
+}
+
+.contentImage {
+	width: 300px;
+	padding-right:8%;
+	height:auto;
+	margin:5px;
 }
 
 p {
