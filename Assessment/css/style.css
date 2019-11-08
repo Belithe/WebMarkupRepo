@@ -29,6 +29,10 @@ body {
 		background-color: transparent;
 		font-size:18px;
 	}
+	#overlayTextContainer p {
+		background-color: transparent;
+		font-size:10px;
+	}
 	
 }
 
@@ -152,6 +156,8 @@ nav ul {
 .bigContentImage {
 	width: 350px;
 	height: auto;
+	max-height:auto;
+	vertical-align:top;
 	margin:5px;
 	position:relative;
 }
