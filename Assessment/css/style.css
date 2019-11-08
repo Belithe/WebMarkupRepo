@@ -3,14 +3,74 @@ body {
 	background-color:#F5F5F5;
 	display: flex;
 	flex-direction:column;
-	flex-wrap: no-wrap;
+	flex-wrap: wrap;
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
 }
 
 #title {
 	text-align:center;
+	position: relative;
+	display:flex;
+	flex-direction:column;
+	flex-wrap:no-wrap;
+	min-height:auto;
+	width:100%;
+}
+
+
+
+
+#titleOverlayHeader  {
+	background-color: transparent;
+	color:#0080ff;
+	width:80%;
+	position:absolute;
+	padding-left:10%;
+	padding-top:18%;
+}
+
+#titleOverlayPayoff {
+	background-color: transparent;
+	color:#0080ff;
+	width:80%;
+	position:absolute;
+	padding-left:10%;
+	padding-top:30%;
+	
+}
+
+#endFooter {
+	width:20%;
+	padding-left:10%;
 }
 
 @media screen and (max-width: 480px) {
+	#sportsList li h3 {
+		width:20%;
+		right:10%;
+		height:auto;
+		margin:5px;
+		position:absolute;
+	}
+	#overlayTextContainer h2 {
+			background-color: transparent;
+			font-size:10px;
+}
+
+	#overlayTextContainer h1 {
+		background-color: transparent;
+		font-size:18px;
+	}
+	
+}
+
+@media screen and (max-width: 1179px, min-width: 481px) {
+	#sportsList li h3 {
+		width:auto;
+	}
 }
 
 section {
@@ -19,9 +79,30 @@ section {
 	padding-right:8%;
 }
 
+#overlayTextContainer {
+	width:80%;
+	padding-top:10%;
+	padding-left:10%;
+	display:flex;
+	flex-direction:column;
+	position:absolute;
+}
+
+#overlayTextContainer h2 {
+	background-color: transparent;
+}
+
+#overlayTextContainer h1 {
+	background-color: transparent;
+	
+}
+
 #sportsList {
 	padding-left:0%;
 	padding-right:10%;
+	display:flex;
+	flex-direction:column;
+	flex-wrap:wrap;
 }
 
 a {
@@ -32,6 +113,30 @@ a:visited {
 	color: #AAAAAA;
 }
 
+#headerVideo {
+	display:flex;
+	left:50%;
+	z-index:-1;
+	min-width: 100%;
+	max-width:100%;
+	width:auto;
+	height:auto;
+	overflow:hidden;
+}
+
+nav ul {
+	display:flex;
+	flex-direction:column;
+	list-style:none;
+	margin:0;
+	padding-left:2%;
+}
+
+button{
+	width:15%;
+	font-size:20px;
+	margin-top:.2%;
+}
 #sportsList li p {
 		width:60%;
 		margin-right: 2%;
@@ -44,21 +149,25 @@ a:visited {
 		list-style-type: none;
 		display:flex;
 		flex-direction: row;
+		flex-wrap:wrap;
 		justify-content: space-between;
 }
 
 #sportsList li h3 {
 	width:18%;
+	flex-wrap:wrap;
 }
 
-#mainArticle {
+#mainArticle, #secondaryArticle {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
-#mainTextContainer {
+
+
+.TextContainer {
 	width: 60%;
 }
 
@@ -77,19 +186,32 @@ a:visited {
 	margin:5px;
 }
 
+.bigContentImage {
+	width: 25%;
+	right:10%;
+	height: auto;
+	margin:5px;
+	position:absolute;
+}
+
 p {
 	
 	font-size: 15pt;
 	color: #000000;
 }
 h1{
+	z-index:4;
+	margin:0;
 	font-size: 80pt;
 	color:#2699FB;
 }
 h2 {
-
 	font-size: 30pt;
 	color: #2699FB;
+	background-color:#b3daff;
+}
+h4 {
+	font-size: 16pt;
 }
 fieldset {
 	font-size:15pt;
@@ -105,4 +227,5 @@ form {
 }
 input {
 	text-align: relative;
+	font-size:20px;
 }
