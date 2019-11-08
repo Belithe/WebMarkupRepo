@@ -83,6 +83,36 @@ body {
 	overflow:hidden;
 }
 
+/*Cookie disclaimer styling*/
+
+
+#cookieWrapper {
+		position:fixed;
+		top:85%;
+		height:15%;
+		width:100%;
+		z-index: 5;
+}
+#disclaimer {
+	margin-top:0%;
+	padding-bottom:5%;
+	color: #ff3333;
+	font-size:30px;
+}
+
+
+
+
+#cookieWrapper  input:checked{
+	display:none;
+}
+
+input:checked + #disclaimer {
+	display:none;
+}
+
+
+	
 /*Eind footer styling */
 #endFooter {
 	width:20%;
@@ -136,7 +166,6 @@ nav ul {
 }
 
 
-/* */
 
 
 /*Image styling */
@@ -156,7 +185,6 @@ nav ul {
 .bigContentImage {
 	width: 350px;
 	height: auto;
-	max-height:auto;
 	vertical-align:top;
 	margin:5px;
 	position:relative;
